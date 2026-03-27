@@ -1,0 +1,392 @@
+/* =========================================================
+   RESET E CONFIGURAÇÕES GERAIS
+========================================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --rosa-principal: #d81b60;
+  --rosa-claro: #ffbcd5;
+  --rosa-suave: #fce4ec;
+  --marrom-principal: #5e3030;
+  --titulo: #3f2e2e;
+  --texto: #70747a;
+  --branco: #ffffff;
+  --escuro-rodape: #1a1c2c;
+  --borda-rodape: #0c0721;
+  --sombra: 15px 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  background-color: var(--branco);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--titulo);
+}
+
+p {
+  color: var(--texto);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* =========================================================
+   CLASSES UTILITÁRIAS
+========================================================= */
+.container {
+  width: min(1100px, 90%);
+  margin: 0 auto;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-header h2 {
+  font-size: 45px;
+  margin-bottom: 8px;
+}
+
+/* =========================================================
+   HEADER / NAVBAR
+========================================================= */
+.navbar-container {
+  width: 100%;
+  min-height: 80px;
+  background-color: var(--marrom-principal);
+  border-bottom: 2px solid var(--branco);
+}
+
+.navbar-container nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  min-height: 80px;
+}
+
+.logo {
+  width: 50px;
+}
+
+.navbar-items {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.navbar-items a {
+  font-size: 14px;
+  color: var(--rosa-claro);
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.navbar-items a:hover {
+  color: var(--rosa-principal);
+}
+
+/* =========================================================
+   BANNER
+========================================================= */
+.main-banner {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 0;
+  background-image: url("../img/mainbanner.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.main-banner h1,
+.main-banner p {
+  color: var(--branco);
+  font-weight: bold;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+}
+
+.main-banner h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.main-banner p {
+  font-size: 27px;
+}
+
+/* =========================================================
+   SERVIÇOS
+========================================================= */
+.services-container {
+  padding: 80px 0;
+}
+
+.services-list {
+  display: flex;
+  gap: 20px;
+}
+
+.services-list li {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+.services-list i {
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: var(--rosa-principal);
+}
+
+.services-list h3 {
+  margin-bottom: 8px;
+}
+
+/* =========================================================
+   HISTÓRIA
+========================================================= */
+.texto-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 60px;
+}
+
+.texto-container.reverso {
+  flex-direction: row-reverse;
+}
+
+.bloco-texto {
+  flex: 1;
+  min-width: 300px;
+  max-width: 550px;
+}
+
+.nome-secao {
+  font-size: 32px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.icone-rosa {
+  color: var(--rosa-principal);
+  font-size: 32px;
+}
+
+.bloco-texto p {
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.estatisticas {
+  display: flex;
+  gap: 40px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.estatistica-item span {
+  display: block;
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--rosa-principal);
+}
+
+.estatistica-item p {
+  font-size: 14px;
+  color: #777;
+}
+
+.img-destaque {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 20px;
+  box-shadow: var(--sombra);
+}
+
+/* =========================================================
+   VALORES
+========================================================= */
+.valores-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.valor-item {
+  flex: 1 1 280px;
+  text-align: center;
+}
+
+.icone-circulo {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--rosa-suave);
+  color: var(--rosa-principal);
+}
+
+.icone-circulo i {
+  font-size: 30px;
+}
+
+.valor-item h4 {
+  margin-bottom: 10px;
+}
+
+/* =========================================================
+   RODAPÉ
+========================================================= */
+.rodape {
+  margin-top: 100px;
+  padding: 60px 0 20px;
+  background-color: var(--escuro-rodape);
+  color: var(--branco);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  flex: 1 1 250px;
+}
+
+.footer-col h4 {
+  margin-bottom: 20px;
+  color: var(--branco);
+}
+
+.footer-col p,
+.footer-col address p {
+  font-size: 14px;
+  color: #b0b0b0;
+  margin-bottom: 10px;
+}
+
+.footer-col i {
+  color: var(--rosa-claro);
+  margin-right: 8px;
+}
+
+.footer-col address {
+  font-style: normal;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid var(--borda-rodape);
+  margin-top: 40px;
+  padding-top: 20px;
+  color: #777;
+}
+
+/* =========================================================
+   RESPONSIVIDADE
+========================================================= */
+@media (max-width: 768px) {
+  .navbar-container nav {
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px 0;
+  }
+
+  .navbar-items {
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .main-banner {
+    min-height: 55vh;
+    padding: 80px 0;
+  }
+
+  .main-banner h1 {
+    font-size: 32px;
+  }
+
+  .main-banner p {
+    font-size: 18px;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  .section-header h2 {
+    font-size: 32px;
+  }
+
+  .services-list {
+    flex-direction: column;
+  }
+
+  .texto-container,
+  .texto-container.reverso {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nome-secao,
+  .estatisticas {
+    justify-content: center;
+  }
+
+  .estatisticas {
+    gap: 20px;
+  }
+
+  .valores-grid {
+    gap: 30px;
+  }
+
+  .footer-container {
+    text-align: center;
+  }
+}
