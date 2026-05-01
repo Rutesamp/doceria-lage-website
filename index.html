@@ -10,16 +10,27 @@
 </head>
 <body id="topo">
 
+  <script>
+  function toggleMenu() {
+    const menu = document.querySelector(".navbar-items");
+    menu.classList.toggle("active");
+  }
+  </script>
+
   <header class="navbar-container">
     <nav class="container">
       <a href="#topo" class="logo-link">
         <img src="assets/img/logo.jpeg" alt="Logo da Doceria Lage" class="logo">
       </a>
 
+      <button class="menu-toggle" onclick="toggleMenu()">
+      ☰
+      </button>
+
       <ul class="navbar-items">
-        <li><a href="#topo">Início</a></li>
+        <li><a href="index.html">Início</a></li>
         <li><a href="#historia">Sobre</a></li>
-        <li><a href="#cardapio">Cardápio</a></li>
+        <li><a href="cardapio.html">Cardápio</a></li>
         <li><a href="#cursos">Cursos</a></li>
       </ul>
     </nav>
@@ -30,6 +41,16 @@
       <div class="container">
         <h1>Doceria Lage</h1>
         <p>Transformando momentos especiais em memórias doces desde 2020</p>
+
+        <div class="banner-buttons">
+          <a href="https://wa.me/5571998765432" target="_blank" class="btn whatsapp">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+
+          <a href="https://instagram.com/doceria_lage" target="_blank" class="btn instagram">
+          <i class="fab fa-instagram"></i> Instagram
+          </a>
+        </div>
       </div>
     </section>
 
@@ -154,7 +175,7 @@
   <footer class="rodape">
     <div class="container footer-container">
       <div class="footer-col">
-        <h4>🧁 Doceria Lage</h4>
+        <h4>Doceria Lage</h4>
         <p>Doces artesanais feitos com carinho e os melhores ingredientes desde 2020.</p>
       </div>
 
@@ -179,6 +200,5 @@
       <p>&copy; 2026 Doceria Lage. Todos os direitos reservados.</p>
     </div>
   </footer>
-
 </body>
 </html>

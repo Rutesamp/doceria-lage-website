@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardápio - Doceria Lage</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="pagina-cardapio">
+
+  <script>
+  function toggleMenu() {
+    const menu = document.querySelector(".navbar-items");
+    menu.classList.toggle("active");
+  }
+  </script>
+
+  <header class="navbar-container">
+    <nav class="container">
+      <a href="index.html" class="logo-link">
+        <img src="assets/img/logo.jpeg" alt="Logo da Doceria Lage" class="logo">
+      </a>
+
+      <button class="menu-toggle" onclick="toggleMenu()">
+      ☰
+      </button>
+
+      <ul class="navbar-items">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="index.html#historia">Sobre</a></li>
+        <li><a href="cardapio.html" class="ativo">Cardápio</a></li>
+        <li><a href="index.html#cursos">Cursos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container section">
+    <div class="section-header">
+      <h2>Nosso Cardápio</h2>
+      <p>Doces artesanais feitos com os melhores ingredientes e muito amor</p>
+    </div>
+
+    <div class="cardapio-filtros">
+      <span class="filtro-tag ativo">Bolos</span>
+      <span class="filtro-tag">Docinhos</span>
+      <span class="filtro-tag">Eventos</span>
+      <span class="filtro-tag">São João</span>
+      <span class="filtro-tag">Páscoa</span>
+      <span class="filtro-tag">Natal</span>
+      <span class="filtro-tag">Salgados</span>
+    </div>
+
+    <div class="cardapio-grid">
+      <div class="cardapio-item">
+        <img src="assets/img/bolo-decorado.jpeg" alt="Bolo Decorado">
+        <div class="item-info">
+          <span>Bolos</span>
+          <h3>Bolo Decorado</h3>
+          <p>Bolos personalizados com diferentes temas, ideais para tornar momentos especiais ainda mais marcantes.</p>
+          <a href="https://wa.me/5571987654321?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20orçamento." 
+            target="_blank" class="item-link">Solicitar Orçamento →</a>
+        </div>
+      </div>
+      <div class="cardapio-item">
+        <img src="assets/img/brigadeiros-de-cereja.png" alt="Docinho">
+        <div class="item-info">
+          <span>Docinhos</span>
+          <h3>Brigadeiro de Cereja</h3>
+          <p>Docinhos com sabores variados e apresentação delicada, perfeitos para compor mesas e celebrações.”</p>
+          <a href="https://wa.me/5571987654321?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20orçamento." 
+            target="_blank" class="item-link">Solicitar Orçamento →</a>
+        </div>
+      </div>
+      <div class="cardapio-item">
+        <img src="assets/img/mesa-de-brigadeiros.png" alt="Mesa de festa">
+        <div class="item-info">
+          <span>Eventos</span>
+          <h3>Mesa Decorada</h3>
+          <p>Mesas decoradas com variedade de doces, pensadas para complementar e valorizar qualquer evento.</p>
+          <a href="https://wa.me/5571987654321?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20orçamento." 
+            target="_blank" class="item-link">Solicitar Orçamento →</a>
+        </div>
+      </div>
+      <div class="cardapio-item">
+        <img src="assets/img/bolos-juninos.png" alt="Bolos juninos">
+        <div class="item-info">
+          <span>São João</span>
+          <h3>Bolos juninos</h3>
+          <p>Bolos juninos tradicionais, com coberturas cremosas e sabores típicos como milho e coco, ideais para a época.</p>
+          <a href="https://wa.me/5571987654321?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20orçamento." 
+            target="_blank" class="item-link">Solicitar Orçamento →</a>
+        </div>
+      </div>
+      <div class="cardapio-item">
+        <img src="assets/img/ovos-de-pascoa.png" alt="Ovos de páscoa">
+        <div class="item-info">
+          <span>Páscoa</span>
+          <h3>Ovos de páscoa</h3>
+          <p>Ovos de chocolate com diferentes recheios e acabamentos, com opção de personalização.</p>
+          <a href="https://wa.me/5571987654321?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20orçamento." 
+            target="_blank" class="item-link">Solicitar Orçamento →</a>
+        </div>
+      </div>
+      <div class="cardapio-item">
+        <img src="assets/img/brigadeiros-natalino.png" alt="Brigadeiros natalino">
+        <div class="item-info">
+          <span>Natal</span>
+          <h3>Brigadeiros natalino</h3>
+          <p>Doces com decoração natalina, ideais para compor mesas e celebrações de fim de ano.</p>
+          <a href="https://wa.me/5571987654321?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20orçamento." 
+            target="_blank" class="item-link">Solicitar Orçamento →</a>
+        </div>
+      </div>
+      <div class="cardapio-item">
+        <img src="assets/img/bolo-sao-joao.jpeg" alt="Bolo de São João">
+        <div class="item-info">
+          <span>Bolos</span>
+          <h3>Bolo decorado</h3>
+          <p>Bolo temático inspirado no São João, ideal para compor a decoração e a mesa da festa.</p>
+          <a href="https://wa.me/5571987654321?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20orçamento." 
+            target="_blank" class="item-link">Solicitar Orçamento →</a>
+        </div>
+      </div>
+      <div class="cardapio-item">
+        <img src="assets/img/torta-salgada.jpeg" alt="Torta salgada">
+        <div class="item-info">
+          <span>Salgados</span>
+          <h3>Torta salgada</h3>
+          <p>Tortas salgadas ideais para variar o cardápio em diferentes momentos.</p>
+          <a href="https://wa.me/5571987654321?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20orçamento." 
+            target="_blank" class="item-link">Solicitar Orçamento →</a>
+        </div>
+      </div>
+      <div class="cardapio-item">
+        <img src="assets/img/empada-salgada.jpeg" alt="Empada salgada">
+        <div class="item-info">
+          <span>Salgados</span>
+          <h3>Empada salgada</h3>
+          <p>Empadas salgadas, práticas e ideais para lanches ou eventos.</p>
+          <a href="https://wa.me/5571987654321?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20orçamento." 
+            target="_blank" class="item-link">Solicitar Orçamento →</a>
+        </div>
+      </div>
+    </div>
+    <div style="text-align: center; margin-top: 50px;">
+        <a href="index.html" class="filtro-btn">Voltar para Início</a>
+    </div>
+<section class="cta-container">
+  <div class="cta-box">
+    <h2>Encomendas Personalizadas</h2>
+    <p>
+      Todos os nossos produtos podem ser personalizados para sua festa ou evento.
+      Entre em contato e solicite seu orçamento.
+    </p>
+
+    <div class="cta-buttons">
+      <a href="https://wa.me/5571987654321" target="_blank" class="btn whatsapp">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+
+      <a href="https://instagram.com/doceria_lage" target="_blank" class="btn instagram">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+    </div>
+  </div>
+</section>
+  </main>
+
+  <footer class="rodape">
+    <div class="footer-bottom">
+      <p>&copy; 2026 Doceria Lage. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+     
+
+</body>
+</html>
